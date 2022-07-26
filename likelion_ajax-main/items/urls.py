@@ -11,5 +11,7 @@ urlpatterns = [
     # 1. like_toggle url 연결하기
     path('like_toggle/<int:post_id>/', views.like_toggle, name="like_toggle"),
     # 2. my_like url 연결하기
-    path('my_like/<int:user_id>', views.my_like, name='my_like')
+    path('my_like/<int:user_id>', views.my_like, name='my_like'),
+    path('dislike_toggle/<int:post_id>/', views.dislike_toggle, name="dislike_toggle"),
+    path('my_dislike/<int:user_id>', views.my_dislike, name='my_dislike'),
 ]
